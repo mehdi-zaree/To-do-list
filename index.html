@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="font-awesome/css/all.min.css">
+</head>
+<body>
+    <main class="bg-gradient-to-r from-cyan-500 to-blue-500 w-[100%] h-[100vh] pt-40 ">
+        <div class="to_do w-96  h-auto m-auto  justify-center p-5 rounded-lg bg-white">
+            <div class="input-wrapper w-60 h-9  relative rounded-full overflow-hidden m-auto">
+                <input type="text" class="absolute w-full h-full border rounded-full px-3" id="taskinput">
+                <button class="absolute right-0 h-full w-14 uppercase rounded-full bg-[#ff4800] " id="addbutton">add</button>
+                <button class="absolute right-2 top-0 h-4 w-9 uppercase rounded-full bg-[#3599b0] hidden flex items-center " id="submitButton"><i class="fa-solid fa-check font-sm  w-full h-full  "></i></button>
+                <button class="absolute right-2 top-4 h-4 w-9 uppercase rounded-full bg-[#ff0000] hidden flex items-center " id="cancelButton" onclick="_cancel(this)"><i class="fa-solid fa-xmark w-full h-full "></i></button>
+                
+            </div>
+            <ul class=" mt-5 rounded-xl bg-[#13273c] p-4 " id="list">
+                <h2 class="text-center uppercase font-bold text-white">tasks</h2>
+              
+            </ul>
+        </div>
+    </main>
+</body>
+<script src="master.js"></script>
+</html>
